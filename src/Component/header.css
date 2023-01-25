@@ -17,8 +17,10 @@
 }
 @media only screen and (max-width: 600px) {
   .headerBody2 {
+    height: 400px;
     display: flex;
     align-items: center;
+    flex-direction: column;
   }
 }
 
@@ -32,6 +34,14 @@
 .headerBox {
   width: 75%;
 }
+@media only screen and (max-width: 600px) {
+    .headerBox {
+      height: 400px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
 .headerIcon {
   font-size: 30px;
   color: rgb(69, 69, 248);
