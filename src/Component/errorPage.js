@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function errorPage() {
   return (
-    <div>
+    <div style={{marginTop:'30px'}}>
       <Result
         status="404"
         title="404"
