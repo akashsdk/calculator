@@ -1,5 +1,5 @@
 .headerBody{
-    height: 85px;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -16,6 +16,12 @@
     display: flex;
     align-items: center;
 }
+@media only screen and (max-width: 600px) {
+    .headerBody2 {
+      display: none;
+    }
+  }
+
 .headerTittle{
     color: rgb(69, 69, 248);
     font-style: normal;
@@ -30,3 +36,8 @@
     font-size: 30px;
     color: rgb(69, 69, 248);
 }
+@media only screen and (max-width: 1000px) {
+    .headerIcon {
+      display: none;
+    }
+  }
