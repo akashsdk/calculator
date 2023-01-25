@@ -2,6 +2,7 @@ import React from "react";
 import "./header.css";
 import { Button } from "antd";
 import { Link } from "react-router-dom";
+import { SyncOutlined } from '@ant-design/icons';
 
 export default function header() {
   return (
@@ -19,7 +20,9 @@ export default function header() {
             Contact
           </Button>
         </div>
-        <div>aaaaagggg</div>
+        <div>
+        <SyncOutlined className="headerIcon"/>
+        </div>
       </div>
     </div>
   );

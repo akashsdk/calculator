@@ -26,3 +26,7 @@
 .headerBox{
     width: 75%;
 }
+.headerIcon{
+    font-size: 30px;
+    color: rgb(69, 69, 248);
+}
