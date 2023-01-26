@@ -10,20 +10,26 @@ export default function header() {
       <div className="headerBody2">
         <h1 className="headerTittle">Calculator</h1>
         <div className="headerBox">
+
           <Button type="dashed" className="headerButton1">
             <Link to="/">Home</Link>
           </Button>
+
           <Button type="dashed" className="headerButton">
-            About
+            <Link to="/About">About</Link>
           </Button>
+
           <Button type="dashed" className="headerButton">
             <Link to="/Contact">Contact</Link>
           </Button>
+
         </div>
         <div>
-          <Button type="text" className="headerButton">
+
+          {/* <Button type="text" className="headerButton"> */}
             <SyncOutlined className="headerIcon" />
-          </Button>
+          {/* </Button> */}
+
         </div>
       </div>
       <div style={{ height: "20px" }} />

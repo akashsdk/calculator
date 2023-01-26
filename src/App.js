@@ -5,6 +5,7 @@ import Home from "./Screen/home";
 import ErrorPage from "./Component/errorPage";
 import Header from "./Component/header";
 import Contact from "./Screen/contact"
+import About from "./Screen/about";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="*" element={<ErrorPage />} />
           <Route path="/" element={<Home />} />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="/About" element={<About />} />
         </Routes>
       </div>
     </BrowserRouter>
