@@ -1,6 +1,6 @@
 import React from "react";
 import "../Style/contact.css";
-import { Button, Form, Input, InputNumber } from "antd";
+import { Button, Form, Input, InputNumber, Select } from "antd";
 
 export default function contact() {
   const layout = {
@@ -28,6 +28,9 @@ export default function contact() {
   const onFinish = (values) => {
     console.log(values);
   };
+
+  const { Option } = Select;
+
   return (
     <div className="contactBody">
       <Form
@@ -56,24 +59,50 @@ export default function contact() {
           rules={[
             {
               type: "email",
+              required: true,
             },
           ]}
         >
           <Input />
         </Form.Item>
-        <Form.Item
-          name={["user", "age"]}
-          label="Age"
-          rules={[
-            {
-              type: "number",
-              min: 0,
-              max: 99,
-            },
-          ]}
-        >
-          <InputNumber />
-        </Form.Item>
+        <div className="contactBox">
+
+          <Form.Item
+            name="gender"
+            label="Gender"
+            rules={[
+              {
+                required: true,
+              },
+            ]}
+          >
+            <Select
+              placeholder="Select a option and change input text above"
+              allowClear
+            >
+              <Option value="male">male</Option>
+              <Option value="female">female</Option>
+              <Option value="other">other</Option>
+            </Select>
+          </Form.Item>
+
+          <Form.Item
+            name={["user", "age"]}
+            label="Age"
+            rules={[
+              {
+                type: "number",
+                min: 0,
+                max: 99,
+              },
+            ]}
+          >
+            <InputNumber />
+          </Form.Item>
+        </div>
+
+
+
         <Form.Item name={["user", "website"]} label="Website">
           <Input />
         </Form.Item>

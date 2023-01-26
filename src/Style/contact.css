@@ -13,3 +13,7 @@
         margin-left: 15%;
     }
   }
+  .contactBox{
+    display: flex;
+    flex-direction: column;
+  }
