@@ -77,7 +77,7 @@ export default function contact() {
             ]}
           >
             <Select
-              placeholder="Select a option and change input text above"
+              placeholder="Select a option Please"
               allowClear
             >
               <Option value="male">male</Option>
@@ -106,9 +106,14 @@ export default function contact() {
         <Form.Item name={["user", "website"]} label="Website">
           <Input />
         </Form.Item>
-        <Form.Item name={["user", "introduction"]} label="Introduction">
+
+
+
+        <Form.Item name={["user", "messages"]} label="Messages">
           <Input.TextArea />
         </Form.Item>
+
+
         <Form.Item
           wrapperCol={{
             ...layout.wrapperCol,

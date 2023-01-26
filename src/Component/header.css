@@ -58,8 +58,12 @@
   font-size: 30px;
   color: rgb(69, 69, 248);
 }
+
 @media only screen and (max-width: 1000px) {
   .headerIcon {
     display: none;
   }
+}
+.headerButton{
+  overflow: unset;
 }

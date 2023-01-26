@@ -21,10 +21,12 @@ export default function header() {
           </Button>
         </div>
         <div>
-          <SyncOutlined className="headerIcon" />
+          <Button type="text" className="headerButton">
+            <SyncOutlined className="headerIcon" />
+          </Button>
         </div>
       </div>
-      <div style={{height:'20px'}} />
+      <div style={{ height: "20px" }} />
     </div>
   );
 }
