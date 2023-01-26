@@ -29,7 +29,7 @@ export default function contact() {
     console.log(values);
   };
   return (
-    <div>
+    <div className="contactBody">
       <Form
         {...layout}
         name="nest-messages"

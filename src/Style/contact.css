@@ -1,0 +1,15 @@
+.contactBody{
+    margin-top: 30px;
+    margin-left: 20%;
+}
+@media only screen and (max-width: 600px) {
+    .contactBody{
+      margin: 10%;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    .contactBody{
+        margin-top: 30px;
+        margin-left: 15%;
+    }
+  }
