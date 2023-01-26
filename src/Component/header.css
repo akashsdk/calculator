@@ -57,13 +57,16 @@
 .headerIcon {
   font-size: 30px;
   color: rgb(69, 69, 248);
+  margin-left: -10px;
 }
 
 @media only screen and (max-width: 1000px) {
-  .headerIcon {
+  .headerIconButton {
     display: none;
   }
 }
-.headerButton {
-  overflow: unset;
+.headerIconButton {
+  height: 40px;
+  width: 40px;
+  border-radius: 30px;
 }
