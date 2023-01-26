@@ -3,6 +3,10 @@ import "../Style/home.css";
 
 export default function home() {
   return (
-    <div>homes</div>
+    <div>
+      <div>
+        aaa
+      </div>
+    </div>
   )
 }
