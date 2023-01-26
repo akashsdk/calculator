@@ -1,19 +1,19 @@
-.contactBody{
-    margin-top: 30px;
-    margin-left: 20%;
+.contactBody {
+  margin-top: 30px;
+  margin-left: 20%;
 }
 @media only screen and (max-width: 600px) {
-    .contactBody{
-      margin: 10%;
-    }
+  .contactBody {
+    margin: 10%;
   }
-  @media only screen and (max-width: 1000px) {
-    .contactBody{
-        margin-top: 30px;
-        margin-left: 15%;
-    }
+}
+@media only screen and (max-width: 1000px) {
+  .contactBody {
+    margin-top: 30px;
+    margin-left: 15%;
   }
-  .contactBox{
-    display: flex;
-    flex-direction: column;
-  }
+}
+.contactBox {
+  display: flex;
+  flex-direction: column;
+}

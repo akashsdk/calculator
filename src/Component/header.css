@@ -23,17 +23,17 @@
     align-items: center;
     flex-direction: column;
   }
-  .headerButton{
+  .headerButton {
     margin-left: -30px;
     margin-top: 20px;
   }
-  .headerButton1{
+  .headerButton1 {
     margin-left: 30px;
   }
 }
 
-.headerButton{
-    margin-left: 30px;
+.headerButton {
+  margin-left: 30px;
 }
 
 .headerTittle {
@@ -47,13 +47,13 @@
   width: 75%;
 }
 @media only screen and (max-width: 600px) {
-    .headerBox {
-      height: 400px;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-    }
+  .headerBox {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
+}
 .headerIcon {
   font-size: 30px;
   color: rgb(69, 69, 248);
@@ -64,6 +64,6 @@
     display: none;
   }
 }
-.headerButton{
+.headerButton {
   overflow: unset;
 }
