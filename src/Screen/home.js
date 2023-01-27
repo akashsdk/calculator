@@ -1,6 +1,8 @@
 import React from 'react';
 import "../Style/home.css";
 
+import { FloatButton } from 'antd';
+
 export default function home() {
   return (
     <div className='homeBody'>
