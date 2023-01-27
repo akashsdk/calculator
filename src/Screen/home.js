@@ -1,13 +1,17 @@
 import React from "react";
 import "../Style/home.css";
 
-import { Button, Space, Tooltip } from "antd";
+import { Button, } from "antd";
 import { CalculatorOutlined } from "@ant-design/icons";
 
+
 export default function home() {
+  
   return (
     <div className="homeBody">
-      <div className="homeLeftBody">aaa</div>
+      <div className="homeLeftBody">
+      
+      </div>
       <div className="homeMidelBody"></div>
 
       <div className="homeRightBody">
@@ -26,6 +30,7 @@ export default function home() {
             <Button shape="circle" icon={<CalculatorOutlined />} />
             </div>
         </div>
+
       </div>
     </div>
   );
