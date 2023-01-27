@@ -1,0 +1,20 @@
+.homeBody{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.homeLeftBody{
+    height: auto;
+    width: 65%;
+    background-color: aqua;
+}
+.homeMidelBody{
+    width: 5%;
+}
+.homeRightBody{
+    height: auto;
+    width: 30%;
+    background-color: blanchedalmond;    
+}

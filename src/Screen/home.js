@@ -3,9 +3,14 @@ import "../Style/home.css";
 
 export default function home() {
   return (
-    <div>
-      <div>
+    <div className='homeBody'>
+      <div className='homeLeftBody'>
         aaa
+      </div>
+      <div className='homeMidelBody'></div>
+
+      <div className='homeRightBody'>
+        bbb
       </div>
     </div>
   )

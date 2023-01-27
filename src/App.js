@@ -6,6 +6,9 @@ import ErrorPage from "./Component/errorPage";
 import Header from "./Component/header";
 import Contact from "./Screen/contact"
 import About from "./Screen/about";
+import GpaCalculator from "./Card/gpaCalculator";
+import NormalCalculator from "./Card/normalCalculator";
+import ScientificCalculator from "./Card/scientificCalculator";
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/About" element={<About />} />
+          <Route path="/gpa-calculator" element={<GpaCalculator />} />
+          <Route path="/normal-calculator" element={<NormalCalculator />} />
+          <Route path="/scientific-calculator" element={<ScientificCalculator />} />
         </Routes>
       </div>
     </BrowserRouter>
