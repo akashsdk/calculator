@@ -10,7 +10,9 @@ export default function home() {
       <div className='homeMidelBody'></div>
 
       <div className='homeRightBody'>
-        bbb
+        <p className='homeRightText'>CONTENTS</p>
+        <div className='homeLine'/>
+        <div>dd</div>
       </div>
     </div>
   )
