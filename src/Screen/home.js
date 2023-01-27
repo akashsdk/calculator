@@ -1,25 +1,32 @@
-import React from 'react';
+import React from "react";
 import "../Style/home.css";
 
-import { FloatButton } from 'antd';
-import { CalculatorOutlined } from '@ant-design/icons';
+import { Button, Space, Tooltip } from "antd";
+import { CalculatorOutlined } from "@ant-design/icons";
 
 export default function home() {
   return (
-    <div className='homeBody'>
-      <div className='homeLeftBody'>
-        aaa
-      </div>
-      <div className='homeMidelBody'></div>
+    <div className="homeBody">
+      <div className="homeLeftBody">aaa</div>
+      <div className="homeMidelBody"></div>
 
-      <div className='homeRightBody'>
-        <p className='homeRightText'>CONTENTS</p>
-        <div className='homeLine'/>
-        <div className='homeRightBox'>
-          <h2>Calculator</h2>
-          <div><CalculatorOutlined /></div>
+      <div className="homeRightBody">
+        <p className="homeRightText">CONTENTS</p>
+        <div className="homeLine" />
+
+        <div className="homeRightBox">
+          <h2 style={{ opacity: ".6" }}>Calculator</h2>
+          <div className="homeRightIconBox">
+            <Button shape="circle" icon={<CalculatorOutlined />} />
+            </div>
+        </div>
+        <div className="homeRightBox">
+          <h2 style={{ opacity: ".6" }}>Calculator</h2>
+          <div className="homeRightIconBox">
+            <Button shape="circle" icon={<CalculatorOutlined />} />
+            </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
