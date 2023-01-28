@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import "../Style/home.css";
+import Calendar from "../Card/Calendar";
+import GpaCalculator from "../Card/GpaCalculator";
+import NormalCalculator from "../Card/NormalCalculator";
+import ScientificCalculator from "../Card/ScientificCalculator";
 
 import { Button } from "antd";
 import { CheckOutlined, CloseOutlined } from "@ant-design/icons";
@@ -14,15 +18,22 @@ export default function Home() {
   return (
     <div className="homeBody">
       <div className="homeLeftBody">
-        <div></div>
         {page === 1 ? (
-          <div>NormalCalculator</div>
+          <div>
+            <NormalCalculator />
+          </div>
         ) : page === 2 ? (
-          <div>ScientificCalculator</div>
+          <div>
+            <ScientificCalculator />
+          </div>
         ) : page === 3 ? (
-          <div>GpaCalculator</div>
+          <div>
+            <GpaCalculator />
+          </div>
         ) : page === 4 ? (
-          <div>Calendar</div>
+          <div>
+            <Calendar />
+          </div>
         ) : (
           <p>Error !!</p>
         )}
@@ -33,7 +44,7 @@ export default function Home() {
         <p className="homeRightText">CONTENTS</p>
         <div className="homeLine" />
 
-        <div className="homeRightBox">
+        <div className="homeRightBox1">
           <div className="homeRightIconBox">
             <Button
               shape="circle"

@@ -34,10 +34,16 @@
     margin-left: 10%;
     
 }
+.homeRightBox1{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+}
 .homeRightBox{
     display: flex;
     flex-direction: row;
     margin-left: 15%;
+    margin-top: -20px;
 }
 .homeRightIcon{
     font-size: 25px;
