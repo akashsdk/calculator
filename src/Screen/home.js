@@ -16,11 +16,11 @@ export default function Home() {
       <div className="homeLeftBody">
         <div></div>
         {page === 1 ? (
-          <div>1</div>
+          <div>NormalCalculator</div>
         ) : page === 2 ? (
-          <div>2</div>
+          <div>ScientificCalculator</div>
         ) : page === 3 ? (
-          <div>3</div>
+          <div>GpaCalculator</div>
         ) : page === 4 ? (
           <div>4</div>
         ) : (
@@ -34,10 +34,7 @@ export default function Home() {
         <div className="homeLine" />
 
         <div className="homeRightBox">
-          <h2 style={{ color: page === 1 ? "black" : "rgb(152, 152, 158)" }}>
-            Calculator
-          </h2>
-          <div className="homeRightIconBox">
+        <div className="homeRightIconBox">
             <Button
               shape="circle"
               icon={<CalculatorOutlined />}
@@ -46,12 +43,14 @@ export default function Home() {
               }}
             />
           </div>
-        </div>
-        <div className="homeRightBox">
-          <h2 style={{ color: page === 2 ? "black" : "rgb(152, 152, 158)" }}>
+          <h2 style={{ color: page === 1 ? "black" : "rgb(152, 152, 158)" }}>
             Calculator
           </h2>
-          <div className="homeRightIconBox">
+          
+        </div>
+        {/* ScientificCalculator */}
+        <div className="homeRightBox">
+        <div className="homeRightIconBox">
             <Button
               shape="circle"
               icon={<CalculatorOutlined />}
@@ -60,12 +59,14 @@ export default function Home() {
               }}
             />
           </div>
-        </div>
-        <div className="homeRightBox">
-          <h2 style={{ color: page === 3 ? "black" : "rgb(152, 152, 158)" }}>
-            Calculator
+          <h2 style={{ color: page === 2 ? "black" : "rgb(152, 152, 158)" }}>
+          Scientific
           </h2>
-          <div className="homeRightIconBox">
+          
+        </div>
+        {/* GpaCalculator */}
+        <div className="homeRightBox">
+        <div className="homeRightIconBox">
             <Button
               shape="circle"
               icon={<CalculatorOutlined />}
@@ -74,12 +75,13 @@ export default function Home() {
               }}
             />
           </div>
+          <h2 style={{ color: page === 3 ? "black" : "rgb(152, 152, 158)" }}>
+          GPA Calculator
+          </h2>
+          
         </div>
         <div className="homeRightBox">
-          <h2 style={{ color: page === 4 ? "black" : "rgb(152, 152, 158)" }}>
-            Calculator
-          </h2>
-          <div className="homeRightIconBox">
+        <div className="homeRightIconBox">
             <Button
               shape="circle"
               icon={<CalculatorOutlined />}
@@ -88,6 +90,10 @@ export default function Home() {
               }}
             />
           </div>
+          <h2 style={{ color: page === 4 ? "black" : "rgb(152, 152, 158)", marginLeft:'20px' }}>
+            Calculator
+          </h2>
+         
         </div>
       </div>
     </div>
