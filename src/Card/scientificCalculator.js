@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function scientificCalculator() {
+export default function ScientificCalculator() {
   return (
     <div>scientificCalculator</div>
   )

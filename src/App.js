@@ -1,14 +1,14 @@
 import "./App.css";
-import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 
-import Home from "./Screen/home";
+import Home from "./Screen/Home";
 import ErrorPage from "./Component/errorPage";
 import Header from "./Component/header";
 import Contact from "./Screen/contact"
 import About from "./Screen/about";
-import GpaCalculator from "./Card/gpaCalculator";
-import NormalCalculator from "./Card/normalCalculator";
-import ScientificCalculator from "./Card/scientificCalculator";
+import GpaCalculator from "./Card/GpaCalculator";
+import NormalCalculator from "./Card/NormalCalculator";
+import ScientificCalculator from "./Card/ScientificCalculator";
 
 function App() {
   return (

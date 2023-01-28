@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function normalCalculator() {
+export default function NormalCalculator() {
   return (
     <div>normalCalculator</div>
   )
