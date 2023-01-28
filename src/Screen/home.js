@@ -1,9 +1,8 @@
-import React, {useState}  from "react";
+import React, { useState } from "react";
 import "../Style/home.css";
 
 import { Button } from "antd";
 import { CalculatorOutlined } from "@ant-design/icons";
-
 
 export default function Home() {
   const [current, setCurrent] = useState(1);
@@ -16,20 +15,19 @@ export default function Home() {
   };
   return (
     <div className="homeBody">
-      
-
       <div className="homeLeftBody">
-      {page == 1 ? (
-        <p className="noticeHedertext">Board-1</p>
-      ) : page == 2 ? (
-        <p className="noticeHedertext">Calendar</p>
-      ) : page == 3 ? (
-        <p className="noticeHedertext">Notice Board</p>
-      ) : page == 4 ? (
-        <p className="noticeHedertext">Events</p>
-      )  : (
-        <p className="noticeHedertext">Error !!</p>
-      )}
+        <div></div>
+        {page == 1 ? (
+          <div>1</div>
+        ) : page == 2 ? (
+          <div>2</div>
+        ) : page == 3 ? (
+          <div>3</div>
+        ) : page == 4 ? (
+          <div>4</div>
+        ) : (
+          <p>Error !!</p>
+        )}
       </div>
       <div className="homeMidelBody"></div>
 
@@ -38,21 +36,31 @@ export default function Home() {
         <div className="homeLine" />
 
         <div className="homeRightBox">
-          <h2 style={{ color: page == 1 ? 'black' : 'rgb(152, 152, 158)', }}>Calculator</h2>
+          <h2 style={{ color: page == 1 ? "black" : "rgb(152, 152, 158)" }}>
+            Calculator
+          </h2>
           <div className="homeRightIconBox">
-            <Button shape="circle" icon={<CalculatorOutlined />} 
-            onClick={() => {
-              setPage(1);
-            }}/>
+            <Button
+              shape="circle"
+              icon={<CalculatorOutlined />}
+              onClick={() => {
+                setPage(1);
+              }}
+            />
           </div>
         </div>
         <div className="homeRightBox">
-          <h2 style={{ color: page == 2 ? 'black' : 'rgb(152, 152, 158)', }}>Calculator</h2>
+          <h2 style={{ color: page == 2 ? "black" : "rgb(152, 152, 158)" }}>
+            Calculator
+          </h2>
           <div className="homeRightIconBox">
-            <Button shape="circle" icon={<CalculatorOutlined />} 
-            onClick={() => {
-              setPage(2);
-            }}/>
+            <Button
+              shape="circle"
+              icon={<CalculatorOutlined />}
+              onClick={() => {
+                setPage(2);
+              }}
+            />
           </div>
         </div>
       </div>
