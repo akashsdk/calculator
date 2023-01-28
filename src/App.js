@@ -5,7 +5,7 @@ import Home from "./Screen/Home";
 import ErrorPage from "./Component/errorPage";
 import Header from "./Component/header";
 import Contact from "./Screen/contact"
-import About from "./Screen/about";
+import About from "./Screen/About";
 import GpaCalculator from "./Card/GpaCalculator";
 import NormalCalculator from "./Card/NormalCalculator";
 import ScientificCalculator from "./Card/ScientificCalculator";
