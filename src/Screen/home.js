@@ -22,7 +22,7 @@ export default function Home() {
         ) : page === 3 ? (
           <div>GpaCalculator</div>
         ) : page === 4 ? (
-          <div>4</div>
+          <div>Calendar</div>
         ) : (
           <p>Error !!</p>
         )}
