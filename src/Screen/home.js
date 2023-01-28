@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../Style/home.css";
 
 import { Button } from "antd";
-import { CalculatorOutlined } from "@ant-design/icons";
+import { CheckOutlined, CloseOutlined } from "@ant-design/icons";
 
 export default function Home() {
   const [page, setPage] = useState(1);
@@ -34,66 +34,83 @@ export default function Home() {
         <div className="homeLine" />
 
         <div className="homeRightBox">
-        <div className="homeRightIconBox">
+          <div className="homeRightIconBox">
             <Button
               shape="circle"
-              icon={<CalculatorOutlined />}
+              icon={page === 1 ? <CheckOutlined /> : <CloseOutlined />}
               onClick={() => {
                 setPage(1);
               }}
             />
           </div>
-          <h2 style={{ color: page === 1 ? "black" : "rgb(152, 152, 158)", marginLeft:'20px' }}>
+          <h2
+            style={{
+              color: page === 1 ? "black" : "rgb(152, 152, 158)",
+              marginLeft: "20px",
+            }}
+          >
             Calculator
           </h2>
-          
         </div>
         {/* ScientificCalculator */}
         <div className="homeRightBox">
-        <div className="homeRightIconBox">
+          <div className="homeRightIconBox">
             <Button
               shape="circle"
-              icon={<CalculatorOutlined />}
+              icon={page === 2 ? <CheckOutlined /> : <CloseOutlined />}
               onClick={() => {
                 setPage(2);
               }}
             />
           </div>
-          <h2 style={{ color: page === 2 ? "black" : "rgb(152, 152, 158)", marginLeft:'20px' }}>
-          Scientific
+          <h2
+            style={{
+              color: page === 2 ? "black" : "rgb(152, 152, 158)",
+              marginLeft: "20px",
+            }}
+          >
+            Scientific
           </h2>
-          
         </div>
         {/* GpaCalculator */}
         <div className="homeRightBox">
-        <div className="homeRightIconBox">
+          <div className="homeRightIconBox">
             <Button
               shape="circle"
-              icon={<CalculatorOutlined />}
+              icon={page === 3 ? <CheckOutlined /> : <CloseOutlined />}
               onClick={() => {
                 setPage(3);
               }}
             />
           </div>
-          <h2 style={{ color: page === 3 ? "black" : "rgb(152, 152, 158)", marginLeft:'20px' }}>
-          GPA Calculator
+          <h2
+            style={{
+              color: page === 3 ? "black" : "rgb(152, 152, 158)",
+              marginLeft: "20px",
+            }}
+          >
+            GPA Calculator
           </h2>
-          
         </div>
+        {/* Calendar  */}
         <div className="homeRightBox">
-        <div className="homeRightIconBox">
+          <div className="homeRightIconBox">
             <Button
               shape="circle"
-              icon={<CalculatorOutlined />}
+              icon={page === 4 ? <CheckOutlined /> : <CloseOutlined />}
               onClick={() => {
                 setPage(4);
               }}
             />
           </div>
-          <h2 style={{ color: page === 4 ? "black" : "rgb(152, 152, 158)", marginLeft:'20px' }}>
-            Calculator
+          <h2
+            style={{
+              color: page === 4 ? "black" : "rgb(152, 152, 158)",
+              marginLeft: "20px",
+            }}
+          >
+            Calendar
           </h2>
-         
         </div>
       </div>
     </div>
