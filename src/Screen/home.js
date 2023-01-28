@@ -5,25 +5,23 @@ import { Button } from "antd";
 import { CalculatorOutlined } from "@ant-design/icons";
 
 export default function Home() {
-  const [current, setCurrent] = useState(1);
   const [page, setPage] = useState(1);
 
   const onChange = (page) => {
     console.log(page);
-    setCurrent(page);
     setPage(page);
   };
   return (
     <div className="homeBody">
       <div className="homeLeftBody">
         <div></div>
-        {page == 1 ? (
+        {page === 1 ? (
           <div>1</div>
-        ) : page == 2 ? (
+        ) : page === 2 ? (
           <div>2</div>
-        ) : page == 3 ? (
+        ) : page === 3 ? (
           <div>3</div>
-        ) : page == 4 ? (
+        ) : page === 4 ? (
           <div>4</div>
         ) : (
           <p>Error !!</p>
@@ -36,7 +34,7 @@ export default function Home() {
         <div className="homeLine" />
 
         <div className="homeRightBox">
-          <h2 style={{ color: page == 1 ? "black" : "rgb(152, 152, 158)" }}>
+          <h2 style={{ color: page === 1 ? "black" : "rgb(152, 152, 158)" }}>
             Calculator
           </h2>
           <div className="homeRightIconBox">
@@ -50,7 +48,7 @@ export default function Home() {
           </div>
         </div>
         <div className="homeRightBox">
-          <h2 style={{ color: page == 2 ? "black" : "rgb(152, 152, 158)" }}>
+          <h2 style={{ color: page === 2 ? "black" : "rgb(152, 152, 158)" }}>
             Calculator
           </h2>
           <div className="homeRightIconBox">
@@ -59,6 +57,34 @@ export default function Home() {
               icon={<CalculatorOutlined />}
               onClick={() => {
                 setPage(2);
+              }}
+            />
+          </div>
+        </div>
+        <div className="homeRightBox">
+          <h2 style={{ color: page === 3 ? "black" : "rgb(152, 152, 158)" }}>
+            Calculator
+          </h2>
+          <div className="homeRightIconBox">
+            <Button
+              shape="circle"
+              icon={<CalculatorOutlined />}
+              onClick={() => {
+                setPage(3);
+              }}
+            />
+          </div>
+        </div>
+        <div className="homeRightBox">
+          <h2 style={{ color: page === 4 ? "black" : "rgb(152, 152, 158)" }}>
+            Calculator
+          </h2>
+          <div className="homeRightIconBox">
+            <Button
+              shape="circle"
+              icon={<CalculatorOutlined />}
+              onClick={() => {
+                setPage(4);
               }}
             />
           </div>
