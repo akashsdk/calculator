@@ -43,7 +43,7 @@ export default function Home() {
               }}
             />
           </div>
-          <h2 style={{ color: page === 1 ? "black" : "rgb(152, 152, 158)" }}>
+          <h2 style={{ color: page === 1 ? "black" : "rgb(152, 152, 158)", marginLeft:'20px' }}>
             Calculator
           </h2>
           
@@ -59,7 +59,7 @@ export default function Home() {
               }}
             />
           </div>
-          <h2 style={{ color: page === 2 ? "black" : "rgb(152, 152, 158)" }}>
+          <h2 style={{ color: page === 2 ? "black" : "rgb(152, 152, 158)", marginLeft:'20px' }}>
           Scientific
           </h2>
           
@@ -75,7 +75,7 @@ export default function Home() {
               }}
             />
           </div>
-          <h2 style={{ color: page === 3 ? "black" : "rgb(152, 152, 158)" }}>
+          <h2 style={{ color: page === 3 ? "black" : "rgb(152, 152, 158)", marginLeft:'20px' }}>
           GPA Calculator
           </h2>
           
