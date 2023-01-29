@@ -112,11 +112,11 @@ export default function Home() {
               <ScientificCalculator />
             </div>
           ) : page === 3 ? (
-            <div>
+            <div className="homeLestBoxShow">
               <GpaCalculator />
             </div>
           ) : page === 4 ? (
-            <div>
+            <div className="homeLestBoxShow">
               <Calendar />
             </div>
           ) : (

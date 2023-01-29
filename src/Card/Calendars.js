@@ -14,6 +14,7 @@ export default function Calendars() {
   };
   return (
     <div className="calendarBody">
+      <div style={{height:'30px'}}/>
       <p className="calendarPtext">Calendar</p>
       <div className="calendarLine" />
       <div className="calendarBox">
@@ -21,6 +22,7 @@ export default function Calendars() {
           <Calendar fullscreen={false} onPanelChange={onPanelChange} />
         </div>
       </div>
+      <div style={{height:'30px'}}/>
     </div>
   );
 }
