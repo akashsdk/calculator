@@ -4,6 +4,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./Screen/Home";
 import ErrorPage from "./Component/errorPage";
 import Header from "./Component/header";
+import Footer from "./Component/Footer";
 import Contact from "./Screen/contact"
 import About from "./Screen/About";
 import GpaCalculator from "./Card/GpaCalculator";
@@ -24,6 +25,7 @@ function App() {
           <Route path="/normal-calculator" element={<NormalCalculator />} />
           <Route path="/scientific-calculator" element={<ScientificCalculator />} />
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   );
