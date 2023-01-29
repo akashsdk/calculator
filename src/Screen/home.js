@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../Style/home.css";
-import Calendar from "../Card/Calendar";
+import Calendar from "../Card/Calendars";
 import GpaCalculator from "../Card/GpaCalculator";
 import NormalCalculator from "../Card/NormalCalculator";
 import ScientificCalculator from "../Card/ScientificCalculator";
@@ -17,6 +17,90 @@ export default function Home() {
   };
   return (
     <div className="homeBody">
+      <div className="homeRightBody1">
+        <p className="homeRightText">CONTENTS</p>
+        <div className="homeLine" />
+
+        <div className="homeRightBox1">
+          <div className="homeRightIconBox">
+            <Button
+              shape="circle"
+              icon={page === 1 ? <CheckOutlined /> : <CloseOutlined />}
+              onClick={() => {
+                setPage(1);
+              }}
+            />
+          </div>
+          <h2
+            style={{
+              color: page === 1 ? "black" : "rgb(152, 152, 158)",
+              marginLeft: "20px",
+            }}
+          >
+            Calculator
+          </h2>
+        </div>
+        {/* ScientificCalculator */}
+        <div className="homeRightBox">
+          <div className="homeRightIconBox">
+            <Button
+              shape="circle"
+              icon={page === 2 ? <CheckOutlined /> : <CloseOutlined />}
+              onClick={() => {
+                setPage(2);
+              }}
+            />
+          </div>
+          <h2
+            style={{
+              color: page === 2 ? "black" : "rgb(152, 152, 158)",
+              marginLeft: "20px",
+            }}
+          >
+            Scientific
+          </h2>
+        </div>
+        {/* GpaCalculator */}
+        <div className="homeRightBox">
+          <div className="homeRightIconBox">
+            <Button
+              shape="circle"
+              icon={page === 3 ? <CheckOutlined /> : <CloseOutlined />}
+              onClick={() => {
+                setPage(3);
+              }}
+            />
+          </div>
+          <h2
+            style={{
+              color: page === 3 ? "black" : "rgb(152, 152, 158)",
+              marginLeft: "20px",
+            }}
+          >
+            GPA Calculator
+          </h2>
+        </div>
+        {/* Calendar  */}
+        <div className="homeRightBox">
+          <div className="homeRightIconBox">
+            <Button
+              shape="circle"
+              icon={page === 4 ? <CheckOutlined /> : <CloseOutlined />}
+              onClick={() => {
+                setPage(4);
+              }}
+            />
+          </div>
+          <h2
+            style={{
+              color: page === 4 ? "black" : "rgb(152, 152, 158)",
+              marginLeft: "20px",
+            }}
+          >
+            Calendar
+          </h2>
+        </div>
+      </div>
       <div className="homeLeftBody">
         {page === 1 ? (
           <div>
@@ -39,7 +123,6 @@ export default function Home() {
         )}
       </div>
       <div className="homeMidelBody"></div>
-
       <div className="homeRightBody">
         <p className="homeRightText">CONTENTS</p>
         <div className="homeLine" />
@@ -124,6 +207,8 @@ export default function Home() {
           </h2>
         </div>
       </div>
+      
+      
     </div>
   );
 }
