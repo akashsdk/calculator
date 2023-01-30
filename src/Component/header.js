@@ -9,12 +9,13 @@ export default function header() {
   const key = 'updatable';
 
   const refreshPage = () => {
-    window.location.reload(false);
+    
     messageApi.open({
       key,
       type: 'loading',
       content: 'Loading...',
     });
+
     setTimeout(() => {
       messageApi.open({
         key,
@@ -22,7 +23,9 @@ export default function header() {
         content: 'Loaded!',
         duration: 2,
       });
+    window.location.reload(false);
     }, 1000);
+    
   };
 
   return (
@@ -43,6 +46,7 @@ export default function header() {
           </Button>
         </div>
         <div>
+        {contextHolder}
           <Button type="text" className="headerIconButton" onClick={refreshPage}>
             <SyncOutlined className="headerIcon" />
           </Button>
