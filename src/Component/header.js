@@ -5,9 +5,26 @@ import { Link } from "react-router-dom";
 import { SyncOutlined } from "@ant-design/icons";
 
 export default function header() {
-  function refreshPage() {
+  const [messageApi, contextHolder] = message.useMessage();
+  const key = 'updatable';
+
+  const refreshPage = () => {
     window.location.reload(false);
-  }
+    messageApi.open({
+      key,
+      type: 'loading',
+      content: 'Loading...',
+    });
+    setTimeout(() => {
+      messageApi.open({
+        key,
+        type: 'success',
+        content: 'Loaded!',
+        duration: 2,
+      });
+    }, 1000);
+  };
+
   return (
     <div className="headerBody">
       <div className="headerBody2">
