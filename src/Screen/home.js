@@ -5,7 +5,7 @@ import GpaCalculator from "../Card/GpaCalculator";
 import NormalCalculator from "../Card/NormalCalculator";
 import ScientificCalculator from "../Card/ScientificCalculator";
 
-import { Button } from "antd";
+import { Button, message } from 'antd';
 import { CheckOutlined, CloseOutlined } from "@ant-design/icons";
 
 export default function Home() {
@@ -27,7 +27,7 @@ export default function Home() {
               <Button
                 shape="circle"
                 icon={page === 1 ? <CheckOutlined /> : <CloseOutlined />}
-                onClick={() => {
+                onClick={(onChange) => {
                   setPage(1);
                 }}
               />
