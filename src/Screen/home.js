@@ -18,7 +18,9 @@ export default function Home() {
 
   const [messageApi, contextHolder] = message.useMessage();
   const key = 'updatable';
-  const openMessage = () => {
+
+  //Calculator
+  const openMessage1 = () => {
     messageApi.open({
       key,
       type: 'loading',
@@ -28,12 +30,67 @@ export default function Home() {
       messageApi.open({
         key,
         type: 'success',
-        content: 'Loaded!',
+        content: 'Calculator',
         duration: 2,
       });
     }, 1000);
     setPage(1);
   };
+
+  // ScientificCalculator 
+  const openMessage2 = () => {
+    messageApi.open({
+      key,
+      type: 'loading',
+      content: 'Loading...',
+    });
+    setTimeout(() => {
+      messageApi.open({
+        key,
+        type: 'success',
+        content: 'Scientific',
+        duration: 2,
+      });
+    }, 1000);
+    setPage(2);
+  };
+
+  //GPA Calculator
+  const openMessage3 = () => {
+    messageApi.open({
+      key,
+      type: 'loading',
+      content: 'Loading...',
+    });
+    setTimeout(() => {
+      messageApi.open({
+        key,
+        type: 'success',
+        content: 'GPA Calculator',
+        duration: 2,
+      });
+    }, 1000);
+    setPage(4);
+  };
+
+  //Calendar
+  const openMessage4 = () => {
+    messageApi.open({
+      key,
+      type: 'loading',
+      content: 'Loading...',
+    });
+    setTimeout(() => {
+      messageApi.open({
+        key,
+        type: 'success',
+        content: 'Calendar',
+        duration: 2,
+      });
+    }, 1000);
+    setPage(4);
+  };
+
   return (
     <div>
       <div className="homeBody">
@@ -41,13 +98,14 @@ export default function Home() {
           <p className="homeRightText">CONTENTS</p>
           <div className="homeLine" />
 
+          {/* Calculator */}
           <div className="homeRightBox1">
             <div className="homeRightIconBox">
             {contextHolder}
               <Button
                 shape="circle"
                 icon={page === 1 ? <CheckOutlined /> : <CloseOutlined />}
-                onClick={openMessage}
+                onClick={openMessage1}
               />
             </div>
             <h2
@@ -62,12 +120,11 @@ export default function Home() {
           {/* ScientificCalculator */}
           <div className="homeRightBox">
             <div className="homeRightIconBox">
+            {contextHolder}
               <Button
                 shape="circle"
                 icon={page === 2 ? <CheckOutlined /> : <CloseOutlined />}
-                onClick={() => {
-                  setPage(2);
-                }}
+                onClick={openMessage2}
               />
             </div>
             <h2
@@ -82,12 +139,11 @@ export default function Home() {
           {/* GpaCalculator */}
           <div className="homeRightBox">
             <div className="homeRightIconBox">
+            {contextHolder}
               <Button
                 shape="circle"
                 icon={page === 3 ? <CheckOutlined /> : <CloseOutlined />}
-                onClick={() => {
-                  setPage(3);
-                }}
+                onClick={openMessage3}
               />
             </div>
             <h2
@@ -102,12 +158,11 @@ export default function Home() {
           {/* Calendar  */}
           <div className="homeRightBox">
             <div className="homeRightIconBox">
+            {contextHolder}
               <Button
                 shape="circle"
                 icon={page === 4 ? <CheckOutlined /> : <CloseOutlined />}
-                onClick={() => {
-                  setPage(4);
-                }}
+                onClick={openMessage4}
               />
             </div>
             <h2
