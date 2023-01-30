@@ -93,7 +93,7 @@ export default function contact() {
               {
                 type: "number",
                 min: 0,
-                max: 99,
+                max: 100,
               },
             ]}
           >

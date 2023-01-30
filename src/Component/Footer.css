@@ -7,4 +7,13 @@
 .footerDownP{
     color: rgb(255, 255, 255);
     font-size: 20px;
+    margin-top: 10px;
+}
+.footerATage{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.footerATage:hover{
+    color: aqua;
 }
