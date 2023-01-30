@@ -17,6 +17,7 @@ const handleChange = (value) => {
 export default function GpaCalculator() {
   return (
     <div className="gpaBody">
+      <div style={{height:'30px'}}/>
       <Form
         name="dynamic_form_nest_item"
         onFinish={onFinish}
@@ -134,6 +135,7 @@ export default function GpaCalculator() {
           </Button>
         </Form.Item>
       </Form>
+      <h2>hhhh</h2>
     </div>
   );
 }
