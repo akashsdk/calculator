@@ -15,6 +15,25 @@ export default function Home() {
     console.log(page);
     setPage(page);
   };
+
+  const [messageApi, contextHolder] = message.useMessage();
+  const key = 'updatable';
+  const openMessage = () => {
+    messageApi.open({
+      key,
+      type: 'loading',
+      content: 'Loading...',
+    });
+    setTimeout(() => {
+      messageApi.open({
+        key,
+        type: 'success',
+        content: 'Loaded!',
+        duration: 2,
+      });
+    }, 1000);
+    setPage(1);
+  };
   return (
     <div>
       <div className="homeBody">
@@ -24,12 +43,11 @@ export default function Home() {
 
           <div className="homeRightBox1">
             <div className="homeRightIconBox">
+            {contextHolder}
               <Button
                 shape="circle"
                 icon={page === 1 ? <CheckOutlined /> : <CloseOutlined />}
-                onClick={(onChange) => {
-                  setPage(1);
-                }}
+                onClick={openMessage}
               />
             </div>
             <h2
