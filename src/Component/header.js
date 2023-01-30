@@ -1,31 +1,29 @@
 import React from "react";
 import "./header.css";
-import { Button, message } from 'antd';
+import { Button, message } from "antd";
 import { Link } from "react-router-dom";
 import { SyncOutlined } from "@ant-design/icons";
 
 export default function header() {
   const [messageApi, contextHolder] = message.useMessage();
-  const key = 'updatable';
+  const key = "updatable";
 
-  const refreshPage = () => {
-    
+  const openMessage = () => {
     messageApi.open({
       key,
-      type: 'loading',
-      content: 'Loading...',
+      type: "loading",
+      content: "Loading...",
     });
 
     setTimeout(() => {
       messageApi.open({
         key,
-        type: 'success',
-        content: 'Loaded!',
+        type: "success",
+        content: "Loaded!",
         duration: 2,
       });
-    window.location.reload(false);
+      window.location.reload(false);
     }, 1000);
-    
   };
 
   return (
@@ -46,8 +44,12 @@ export default function header() {
           </Button>
         </div>
         <div>
-        {contextHolder}
-          <Button type="text" className="headerIconButton" onClick={refreshPage}>
+          {contextHolder}
+          <Button
+            type="text"
+            className="headerIconButton"
+            onClick={openMessage}
+          >
             <SyncOutlined className="headerIcon" />
           </Button>
         </div>
