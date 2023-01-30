@@ -68,43 +68,43 @@ export default function GpaCalculator() {
                       onChange={handleChange}
                       options={[
                         {
-                          value: "A+",
+                          value: "4.00",
                           label: "A+",
                         },
                         {
-                          value: "A",
+                          value: "	3.75",
                           label: "A",
                         },
                         {
-                          value: "A-",
+                          value: "	3.50",
                           label: "A-",
                         },
                         {
-                          value: "B+",
+                          value: "3.25",
                           label: "B+",
                         },
                         {
-                          value: "B",
+                          value: "3.00",
                           label: "B",
                         },
                         {
-                          value: "B-",
+                          value: "2.75",
                           label: "B-",
                         },
                         {
-                          value: "C+",
+                          value: "2.50",
                           label: "C+",
                         },
                         {
-                          value: "C",
+                          value: "2.25",
                           label: "C",
                         },
                         {
-                          value: "D",
+                          value: "2.00",
                           label: "D",
                         },
                         {
-                          value: "F",
+                          value: "0",
                           label: "F",
                         },
                       ]}
@@ -120,7 +120,7 @@ export default function GpaCalculator() {
                   block
                   icon={<PlusOutlined />}
                   style={{
-                    maxWidth: 200,
+                    maxWidth: 400,
                   }}
                 >
                   Add Course
@@ -135,7 +135,7 @@ export default function GpaCalculator() {
           </Button>
         </Form.Item>
       </Form>
-      <h2>hhhh</h2>
+      <h2 className="gpaH2Text">Your GPA is: 4.00</h2>
     </div>
   );
 }
