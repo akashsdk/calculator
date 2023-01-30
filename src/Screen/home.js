@@ -175,6 +175,10 @@ export default function Home() {
             </h2>
           </div>
         </div>
+
+
+
+
         <div className="homeLeftBody">
           {page === 1 ? (
             <div>
@@ -196,19 +200,23 @@ export default function Home() {
             <p>Error !!</p>
           )}
         </div>
+
+
+
+
         <div className="homeMidelBody"></div>
         <div className="homeRightBody">
           <p className="homeRightText">CONTENTS</p>
           <div className="homeLine" />
 
+          {/* Calculator */}
           <div className="homeRightBox1">
             <div className="homeRightIconBox">
+            {contextHolder}
               <Button
                 shape="circle"
                 icon={page === 1 ? <CheckOutlined /> : <CloseOutlined />}
-                onClick={() => {
-                  setPage(1);
-                }}
+                onClick={openMessage1}
               />
             </div>
             <h2
@@ -223,12 +231,11 @@ export default function Home() {
           {/* ScientificCalculator */}
           <div className="homeRightBox">
             <div className="homeRightIconBox">
+            {contextHolder}
               <Button
                 shape="circle"
                 icon={page === 2 ? <CheckOutlined /> : <CloseOutlined />}
-                onClick={() => {
-                  setPage(2);
-                }}
+                onClick={openMessage2}
               />
             </div>
             <h2
@@ -243,12 +250,11 @@ export default function Home() {
           {/* GpaCalculator */}
           <div className="homeRightBox">
             <div className="homeRightIconBox">
+            {contextHolder}
               <Button
                 shape="circle"
                 icon={page === 3 ? <CheckOutlined /> : <CloseOutlined />}
-                onClick={() => {
-                  setPage(3);
-                }}
+                onClick={openMessage3}
               />
             </div>
             <h2
@@ -263,12 +269,11 @@ export default function Home() {
           {/* Calendar  */}
           <div className="homeRightBox">
             <div className="homeRightIconBox">
+            {contextHolder}
               <Button
                 shape="circle"
                 icon={page === 4 ? <CheckOutlined /> : <CloseOutlined />}
-                onClick={() => {
-                  setPage(4);
-                }}
+                onClick={openMessage4}
               />
             </div>
             <h2
@@ -282,8 +287,12 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+
+      {/* Calculator */}
       {page === 1 ? (
         <div></div>
+        // ScientificCalculator 
       ) : page === 2 ? (
         <div></div>
       ) : page === 3 ? (
@@ -410,6 +419,7 @@ export default function Home() {
             click on Add Next Semester Button.
           </p>
         </div>
+        //Calendar
       ) : page === 4 ? (
         <div></div>
       ) : (
