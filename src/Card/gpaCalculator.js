@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
+import './GpaCalculator.css';
 
 export default function GpaCalculator() {
   return (
-    <div>gpaCalculator</div>
+    <div className='gpaBody'>gpa</div>
   )
 }
