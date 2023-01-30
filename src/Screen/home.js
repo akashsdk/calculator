@@ -70,7 +70,7 @@ export default function Home() {
         duration: 2,
       });
     }, 1000);
-    setPage(4);
+    setPage(3);
   };
 
   //Calendar
